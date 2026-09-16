@@ -2,9 +2,16 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 
 
+from django.contrib.auth.models import User
+from rest_framework import serializers
+
+
 class RegisterSerializer(serializers.ModelSerializer):
 
-    password = serializers.CharField(write_only=True)
+    password = serializers.CharField(
+        write_only=True,
+        min_length=8
+    )
 
     class Meta:
         model = User
@@ -15,14 +22,6 @@ class RegisterSerializer(serializers.ModelSerializer):
             "first_name",
             "last_name",
         ]
-
-    def validate_username(self, value):
-        if User.objects.filter(username=value).exists():
-            raise serializers.ValidationError(
-                "Username already exists."
-            )
-
-        return value
 
     def validate_email(self, value):
         if User.objects.filter(email=value).exists():
@@ -40,3 +39,28 @@ class RegisterSerializer(serializers.ModelSerializer):
             first_name=validated_data.get("first_name", ""),
             last_name=validated_data.get("last_name", ""),
         )
+
+
+class LoginSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField(
+        write_only=True
+    )
+
+
+class UserSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = User
+        fields = [
+            "id",
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+        ]
+        read_only_fields = [
+            "id",
+            "username",
+            "email",
+        ]
