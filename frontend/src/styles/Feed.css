@@ -1,0 +1,102 @@
+.feed {
+  width: 100%;
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.feed-controls {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.feed-search,
+.feed-author {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.feed-ordering {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.feed-input {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.feed-select {
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feed-button {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.feed-button:hover {
+  background: #e8e8e8;
+}
+
+.feed-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feed-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feed-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.feed-page-number {
+  font-weight: 600;
+}
+
+.feed-message {
+  text-align: center;
+  padding: 20px;
+}
+
+.feed-error {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feed-controls {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.feed-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

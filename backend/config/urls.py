@@ -15,8 +15,7 @@ urlpatterns = [
 
     path(
         "api/profiles/",
-        include("profiles.urls"),
-    ),
+        include("profiles.urls"),),
 
     path(
         "api/posts/",

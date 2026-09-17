@@ -1,0 +1,90 @@
+.post-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.post-author {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.post-content {
+  margin: 0 0 14px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.post-stats {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.post-button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background: #e8e8e8;
+}
+
+.post-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.post-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-edit-form textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+.post-edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.post-error {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.post-edit-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 15px;
+}

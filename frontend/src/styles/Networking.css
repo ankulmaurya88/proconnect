@@ -1,0 +1,79 @@
+.networking-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.networking-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.networking-container h1 {
+  margin-bottom: 25px;
+}
+
+.networking-section {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.networking-form {
+  display: flex;
+  gap: 10px;
+}
+
+.networking-form input {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.networking-section button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.networking-section button:hover {
+  background: #e8e8e8;
+}
+
+.networking-section button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.connection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connection-card,
+.request-card {
+  padding: 14px;
+  background: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.networking-message {
+  margin-top: 10px;
+}
+
+.networking-error {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

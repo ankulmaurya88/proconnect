@@ -1,0 +1,124 @@
+.profile-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.profile-page h1 {
+  margin-bottom: 30px;
+}
+
+.profile-section {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-form label {
+  font-weight: 600;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.profile-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.profile-page button {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.profile-page button:hover {
+  background: #e9e9e9;
+}
+
+.profile-page button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+
+.skill-item button {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.item-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.item-card h3 {
+  margin-top: 0;
+}
+
+.item-card p {
+  margin: 7px 0;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.error-message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

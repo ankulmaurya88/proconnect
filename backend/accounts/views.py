@@ -6,7 +6,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.permissions import AllowAny
 from rest_framework.exceptions import AuthenticationFailed
 
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -22,7 +22,7 @@ logger = logging.getLogger("proconnect")
 
 
 class RegisterView(APIView):
-
+    permission_classes = [AllowAny]
     def post(self, request):
         serializer = RegisterSerializer(
             data=request.data
@@ -55,8 +55,9 @@ class RegisterView(APIView):
 
 
 class LoginView(APIView):
-
+    permission_classes = [AllowAny]
     def post(self, request):
+        print("REQUEST DATA:", request.data)
         serializer = LoginSerializer(
             data=request.data
         )
@@ -140,7 +141,7 @@ class MeView(APIView):
 
 
 class RefreshTokenView(APIView):
-    
+    permission_classes = [AllowAny]
     def post(self, request):
 
         refresh_token = request.data.get("refresh")

@@ -270,10 +270,7 @@ class ExperienceDetailView(RetrieveUpdateDestroyAPIView):
         "profile__user"
     )
     serializer_class = ExperienceSerializer
-    permission_classes = [
-        IsAuthenticated,
-        IsProfileResourceOwner,
-    ]
+    permission_classes = [IsAuthenticated,IsProfileResourceOwner,]
 
     def perform_update(self, serializer):
         experience = serializer.save()
